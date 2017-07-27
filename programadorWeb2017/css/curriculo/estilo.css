@@ -1,0 +1,103 @@
+body {
+	font-family: 'Lato', sans-serif;
+	background-image: url("07.jpg");
+}
+
+div.geral {
+	background-image: url("us-flag.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+
+}
+
+div.conteudo {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+
+	background-color: #FFF; /* branco */
+}
+
+div.conteudo-geral h1 {
+	background-image: url("diploma2.png");
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 80px;
+}
+
+div.dados-pessoais {
+	background-color: #eee;
+	padding: 5px;
+	height: 200px;
+	margin-bottom: 20px;
+
+	background-image: url("barack.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+
+}
+
+div.dados-pessoais table {
+	margin-right: 250px;
+	text-align: left;
+	padding: 10px;
+	margin-top: 20px;
+}
+
+table th, td {
+	padding: 5px;
+	font-family: 'Lato', sans-serif;
+	border: 1px solid #FFF;
+}
+
+table th, td {
+	background-color: #FFF;
+}
+
+div .endereco {
+	background-color: #9ACD32;
+	padding: 5px;
+	height: 230px;
+	margin-bottom: 20px;
+
+	background-image: url("endereco.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div .endereco p {
+	margin-top: 180px;
+	text-align: center;
+	font-size: 20px;
+	color: #FFF;
+}
+
+div.outras-informacoes {
+	background-color: #483D8B;
+	padding: 5px;
+	height: auto;
+	margin-bottom: 20px;
+
+	padding: 25px;
+	border-radius: 25px;
+}
+
+div.outras-informacoes h2 {
+	text-align: center;
+	color: #FFF;
+}
+
+div.outras-informacoes p {
+	padding: 10px;
+	background-color: #7B68EE;
+	color: #333;
+	border-radius: 10px;
+}
+
+div.outras-informacoes p:hover {
+	background-color: #9932CC;
+	color: #FFF;
+	cursor: help;
+}
