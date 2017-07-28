@@ -20,7 +20,7 @@ div.conteudo {
 	background-color: #FFF; /* branco */
 }
 
-div.conteudo-geral h1 {
+div.conteudo h1 {
 	background-image: url("diploma2.png");
 	background-repeat: repeat-x;
 	background-position: bottom;
