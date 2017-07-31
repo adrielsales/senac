@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("bg-icons.jpg");
+}
+
+.container {
+	width: 1024px;
+	margin: 20px auto;
+	background-color: #FFF;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+.conteudo {
+	padding-right: 200px;
+}
+
+blockquote {
+	border: 8px solid #999;
+	padding: 20px;
+	width: 200px;
+	margin: 30px 0;
+
+	float: right;
+}
+
+p {
+	margin: 30px 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	background-color: green;
+	padding: 20px;
+	clear: right;
+}
+
+#menu {
+	background: #333;
+	padding: 20px;
+	text-align: center;
+	width: 300px;
+	float: right;
+	position: fixed;
+	top: 235px;
+	right: 0;
+}
+
+	#menu ul li {
+		list-style: none;
+}
+
+#menu li {
+	padding: 10px;
+	border: 2px solid #FFF;
+}
+
+#menu li:hover {
+	padding: 10px;
+	background: #f04a4a;
+}
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+img {
+	border: 5px solid #FFF;
+
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+
+div.imagens {
+	/*border: 3px solid red;*/
+	height: 500px;
+	clear: both;
+}
+
+.img1, .img2, .img3 {
+	width: 250px;
+	border: 3px solid blue;
+	position: relative;
+}
