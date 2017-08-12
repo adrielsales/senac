@@ -1,0 +1,68 @@
+/*------------ header ----------------*/
+.header-row {
+    margin-top: 10px;
+}
+
+.logo-box {
+  background-color: #F5F5F5;
+  padding: 0 10px 20px;
+  border-top-left-radius: 5px;
+}
+
+.logo {
+  background-image: url("logo.png");
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  height: 60px;
+}
+
+.logo h3 {
+  color: #999;
+  text-shadow: 3px 3px 5px #ccc;
+}
+
+.logo p {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 18px;
+  color: #2C9FC8;
+}
+
+.banner-box {
+  border-top-right-radius: 5px;
+  background-color: #F5F5F5;
+  padding: 5px;
+}
+
+.banner {
+  height: 90px;
+}
+
+/*------------ fim header ----------------*/
+
+/*------------ Menu ----------------*/
+
+.menu-row {
+  padding: 10px;
+  border: 1px dashed #999;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*------------ fim Menu ----------------*/
+
+
+/*------------- footer -------------------*/
+
+.footer {
+  color: #999;
+  font-size: 11px;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #F5F5F5;
+  box-shadow: 0px -2px 8px #ccc;
+}
