@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <title>Lista 15 - Exercício 04</title>
+  <body>
+    <h1>Lista 15 - Exercício 04</h1>
+    <script type="text/javascript">
+
+      var numA = parseInt(prompt("Informe o número A:"));
+      var numB = parseInt(prompt("Informe o número B:"));
+
+      document.write("<h1>Valor de A no início: " + numA + "</h1>");
+      document.write("<h1>Valor de B no início: " + numB + "</h1>");
+
+      var troca = numA;
+      numA = numB;
+      numB = troca;
+
+      document.write("<h1>Valor de A no final: " + numA + "</h1>");
+      document.write("<h1>Valor de B no final: " + numB + "</h1>");
+
+    </script>
+  </body>
+</html>

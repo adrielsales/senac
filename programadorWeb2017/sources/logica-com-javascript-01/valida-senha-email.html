@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testa Email e Senha</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Testa Email e Senha</h1>
+      <script>
+
+      /*Dados vindos do Banco de Dados*/
+      var emailDB = "adrielsalles@gmail.com";
+      var senhaDB = 123456;
+
+      /*Dados do usuário*/
+      var emailUser = prompt("Entre com o email:");
+      var senhaUser = parseInt(prompt("Entre com a senha:"));
+
+      if (emailDB === emailUser && senhaDB === senhaUser) {
+        document.write("<div class='alert alert-success'><h2>Acesso permitido!!</h2></div>");
+      } else {
+        document.write("<div class='alert alert-danger'><h2>Acesso negado! Email ou senha não conferem.</h2></div>");
+      }
+    </script>
+    </div>
+  </body>
+</html>

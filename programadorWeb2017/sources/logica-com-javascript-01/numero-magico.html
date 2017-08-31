@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Número Mágico</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>Número Mágico</h1>
+      <script type="text/javascript">
+
+        function imprime(conteudo) {
+          document.write("<h3> " + conteudo + " </h3>");
+          document.write("<br>");
+        }
+
+        /*
+        1. Gerar o numero magico, até 10.
+        2. sugestao do usuário;
+        3. se sugestao igual numero magico
+          imprime: ganhou.
+        4. senão
+          imprime: perdeu.
+          volte para o passo 2.
+
+        */
+
+        var numeroMagico = Math.round(Math.random() * 10);
+        console.log(numeroMagico);
+        var numeroDeTentativas = 0;
+        //início do loop
+        while (numeroDeTentativas < 5) {
+          var sugestao = parseInt(prompt("Informe o número:"));
+
+          if (numeroMagico == sugestao) {
+            alert("Você acertou!! ");
+            numeroDeTentativas = 5;
+          } else {
+            alert("Você errou! :( ");
+            numeroDeTentativas = numeroDeTentativas + 1;
+          }
+        }//início do while - loop
+        imprime("Fim de Jogo...");
+      </script>
+    </div>
+  </body>
+</html>

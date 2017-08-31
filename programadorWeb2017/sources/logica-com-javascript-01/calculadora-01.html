@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora 01</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <style media="screen">
+    span.valor {
+      font-size: 50px;
+      color: green;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora 01</h1>
+    <hr>
+
+    <script type="text/javascript">
+
+    function pulaLinha(){
+      document.write("<br>");
+    }
+
+    function imprime(conteudo){
+      document.write("<h2>"+ conteudo +"</h2>");
+      pulaLinha();
+    }
+
+    function soma(num1, num2){
+      return num1 + num2;
+    }
+
+    function subtrai(num1, num2){
+      return num1 - num2;
+    }
+
+    function multiplica(num1, num2){
+      return num1 * num2;
+    }
+
+    function divide(num1, num2){
+      return num1 / num2;
+    }
+
+    var a = 10;
+    var b = 10;
+
+    imprime("<span class='glyphicon glyphicon-plus text-success' aria-hidden='true'></span> A soma de a com b é <span class='valor'>" + soma(a,b) + "</span>");
+    imprime("<span class='glyphicon glyphicon-minus text-info' aria-hidden='true'></span> A subtração de a por b é <span class='valor'>" + subtrai(a,b) + "</span>");
+    imprime("<span class='glyphicon glyphicon-asterisk text-warning' aria-hidden='true'></span> A multiplicação de a por b é <span class='valor'>" + multiplica(a,b) + "</span>");
+    imprime("<span class='glyphicon glyphicon-option-vertical text-danger' aria-hidden='true'></span> A divisão de a por b é <span class='valor'>" + divide(a,b) + "</span>");
+
+    </script>
+  </div>
+</body>
+</html>
