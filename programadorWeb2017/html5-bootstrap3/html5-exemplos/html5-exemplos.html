@@ -1,0 +1,124 @@
+	
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style>
+		#url:valid {background:#0f0;}
+		#url:invalid {background:#f00; color:#fff;}
+		footer {
+			text-align: center;
+			padding: 600px 0;
+		}
+	</style>
+
+	<title>Formulários</title>
+</head>
+
+<body>
+
+	<div class="container">
+	
+	<header>
+		<h1>Programador Web - Formulários</h1>
+		<h3>Atributo type: search, tel, url, email, datetime, date, time, month, week, datetime-local, number, range, color</h3>
+	</header>
+
+	<hr>
+
+		<section>
+			<form>
+				<div class="form-group">
+					<label>Busca:<br />
+					<input name="busca" type="search" value="palavra-chave" /></label>
+				</div>
+				<div class="form-group">
+					<label>Telefone:<br /><input required name="tel" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" /></label> (xx) xxxx-xxxx
+				</div>
+				<div class="form-group">
+					<label>URL:<br />
+					<input type="url" name="url" id="url" /></label>
+				</div>
+				<div class="form-group">
+					<label>E-mail:<br />
+					<input type="email" required name="email" /></label>
+				</div>	
+				<div class="form-group">
+					<label>Data/hora:<br />
+					<input type="datetime" name="datahora" /></label>
+				</div>
+				<div class="form-group">
+					<label>Data:<br />
+					<input type="date" name="data" /></label>
+				</div>
+				<div class="form-group">
+					<label>Hora:<br />
+					<input type="time" name="hora"></label>
+				</div>
+				<div class="form-group">
+					<label>Mês:<br />
+					<input type="month" name="mes" /></label>
+				</div>
+				<div class="form-group">
+					<label>Semana:<br />
+					<input type="week" name="semana" /></label>
+				</div>
+				<div class="form-group">
+					<label>Data/hora Local:<br />
+					<input type="datetime-local" name="datahoralocal" /></label>
+				</div>
+				<div class="form-group">
+					<label>Número:<br />
+					<input type="number" name="numero1" /></label>
+				</div>
+				<div class="form-group">
+					<label>Outro número:<br />
+					<input type="range" min="0" max="100" value="50" step="5" name="numero2" /></label>
+				</div>
+				<div class="form-group">
+					<label>Cor:<br />
+					<input type="color" name="cor" /></label>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Enviar" />
+			</div>		
+			</form>
+		</section>
+
+		<hr>
+
+		<section>
+			<h1>Novos Elementos</h1>
+			<h3>Elementos: details, summary, progress</h3>
+			<details>
+				<summary>Copiando <progress max="39248" value="14718"> 37,5%</summary>
+				<dl>
+					<dt>Tamanho total:</dt>
+					<dd>39.248KB</dd>
+					<dt>Transferido:</dt>
+					<dd>14.718</dd>
+					<dt>Taxa de transferência:</dt>
+					<dd>127KB/s</dd>
+					<dt>Nome do arquivo:</dt>
+					<dd>HTML5.mp4</dd>
+				</dl>
+			</details>
+		</section>
+
+
+		<footer>Rodapé</footer>
+
+
+
+
+
+	</div>
+
+
+</body>
+</html>
