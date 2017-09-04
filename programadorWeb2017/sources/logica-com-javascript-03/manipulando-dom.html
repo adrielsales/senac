@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulando DOM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Manipulando DOM</h1>
+      <hr>
+
+      <div id="adiciona-conteudo"></div>
+      <div class="tem-conteudo">
+        <h2>O valor de um site é R$ <span class="valor">999</span>.</h2>
+        Mas aqui cusra R$
+        <div id="mostra-valor" style="font-size:40px;color:green;"></div>
+      </div>
+
+      <script type="text/javascript">
+        //adicionando conteúdo
+        document.getElementById("adiciona-conteudo").innerHTML = "<h2>Conteúdo inserido com sucesso!</h2>";
+        //adicionando CSS
+        document.getElementById("adiciona-conteudo").style.background = "red";
+        document.getElementById("adiciona-conteudo").style.padding = "20px";
+        document.getElementById("adiciona-conteudo").style.border = "2px solid blue";
+        document.getElementById("adiciona-conteudo").style.color = "white";
+        document.getElementById("adiciona-conteudo").style.margin = "20px";
+
+        //pegando o conteúdo pela class
+        var valor = document.getElementsByClassName('valor');
+        //console.log(valor[0].textContent);
+        // for (var i = 0; i < valor.length; i++) {
+        //   console.log(valor[i].textContent);
+        // }
+        var valorAtualizado = valor[0].textContent * 5;
+        document.getElementById("mostra-valor").innerHTML = valorAtualizado;
+
+      </script>
+    </div>
+  </body>
+</html>
