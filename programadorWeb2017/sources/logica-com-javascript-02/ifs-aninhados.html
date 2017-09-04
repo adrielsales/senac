@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ifs aninhados</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Ifs aninhados</h1>
+		<hr>
+		<script type="text/javascript">
+
+		function imprime(conteudo){
+			document.write("<h3 class='alert alert-warning'>" + conteudo + "</h3>");
+		}
+
+		var corDoCarro = "Branco";
+
+		if (corDoCarro == "Branco") {
+			imprime("Valor do carro: " + 25.001);
+		} else if (corDoCarro == "Vermelho") {
+			imprime("Valor do carro: " + 27.001);
+		} else if (corDoCarro == "Cinza") {
+			imprime("Valor do carro: " + 30.001);
+		} else if (corDoCarro == "Preto") {
+			imprime("Valor do carro: " + 35.001);
+		} else {
+			imprime("Valor do carro: " + 15.001);
+		}
+
+		corDoCarro = "Preto";
+
+		switch (corDoCarro) {
+			case "Branco":
+				imprime("Valor do carro: " + 25.001);
+				break;
+			case "Vermelho":
+				imprime("Valor do carro: " + 27.001);
+				break;
+			case "Cinza":
+				imprime("Valor do carro: " + 30.001);
+				break;
+			case "Preto":
+				imprime("Valor do carro: " + 35.001);
+				break;
+			default:
+				imprime("Valor do carro: " + 15.001);
+		}
+
+
+
+
+
+		</script>
+	</div>
+
+</body>
+</html>

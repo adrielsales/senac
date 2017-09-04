@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Break and Continue</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Break and Continue</h1>
+		<hr>
+		<script type="text/javascript">
+
+		function imprime(conteudo){
+			document.write("<h3 class='alert alert-warning'>" + conteudo + "</h3>");
+		}
+
+		/*break*/
+		for (var i = 1; i <= 10; i++) {
+			if (i === 3) {
+				imprime("Parou o loop no laço " + i);
+				break;
+			}
+			imprime("Loop normal no laço " + i);
+		}
+
+		imprime("<hr>");
+		i = 0;
+
+		/*continue*/
+		for (var i = 1; i <= 10; i++) {
+			if (i === 3) {
+				continue;
+				imprime("Parou o loop no laço " + i);
+			}
+			imprime("Loop normal no laço " + i);
+		}
+
+		</script>
+	</div>
+
+</body>
+</html>

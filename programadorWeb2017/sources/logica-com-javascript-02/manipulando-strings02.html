@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Manipulando Strings</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Manipulando Strings</h1>
+		<hr>
+		<script type="text/javascript">
+
+		function imprime(conteudo){
+			document.write("<h3 class='alert alert-warning'>" + conteudo + "</h3>");
+		}
+
+		/*Tamanho do texto (string)*/
+		var meuTexto = "Em programação javascript, um texto é uma string.";
+		/*Tamanho do texto (string)*/
+		var tamanhoDoTexto = meuTexto.length;
+		imprime("O texto possui " + tamanhoDoTexto + " caracteres.");
+		//texto em minuscúlo
+		imprime(meuTexto.toLowerCase());
+		//texto em maiúsculo
+		imprime(meuTexto.toUpperCase());
+		//usando a função substring para pegar uma parte da string
+		imprime(meuTexto.substring(13,25));
+
+		/*substituindo uma parte da string*/
+		imprime(meuTexto.replace("javascript", "web"));
+
+
+
+
+
+		</script>
+	</div>
+
+</body>
+</html>
