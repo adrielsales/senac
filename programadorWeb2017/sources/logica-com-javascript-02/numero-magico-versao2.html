@@ -4,20 +4,39 @@
 	<meta charset="utf-8">
 	<title>Número Mágico - V2</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		#div-ganhou {
+			background-color: #9ACD32;
+			padding: 30px;
+			text-align: center;
+			margin-top: 30px;
+			display: block;
+		}
+
+		#div-errou {
+			background-color: #F08080;
+			padding: 30px;
+			text-align: center;
+			margin-top: 30px;
+			color: #FFF;
+			display: block;
+		}
+	</style>
+
 </head>
 <body>
 	<div class="container">
 		<input type="text" name="entrada">
 		<button class="btn btn-success">Digite o seu número mágico</button>
 
-		<div id="div-ganhou" class="alert alert-success">
+		<div id="div-ganhou">
 			<h1>
 				<span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>
 				Ganhou!!!!!!!!!!!
 			</h1>
 		</div>
 
-		<div id="div-errou" class="alert alert-danger">
+		<div id="div-errou">
 			<h1>
 				<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
 				Errou!!!!!!!!!!!
@@ -38,6 +57,16 @@
 			}
 		}
 
+		function acertou(){
+			document.getElementById("div-ganhou").style.display = "block";
+			document.getElementById("div-errou").style.display = "none";
+		}
+
+		function errou(){
+			document.getElementById("div-errou").style.display = "block";
+			document.getElementById("div-ganhou").style.display = "none";
+		}
+
 		var numero = Math.random() * 3;
 		console.log(numero);
 
@@ -50,13 +79,12 @@
 			var numeroDoUsuario = input.value;
 
 			if (numeroMagico == numeroDoUsuario) {
-				// alert("Acertou!!! :)");
-				document.getElementById("div-ganhou").style.display = "block";
-				document.getElementById("div-errou").style.display = "none";
+				acertou();
+				// setTimeout(mudarEstado("div-ganhou"), 2000);
+
 			} else {
-				// alert("Errou!! :( ");
-				document.getElementById("div-errou").style.display = "block";
-				document.getElementById("div-ganhou").style.display = "none";
+				errou();
+				// setTimeout(mudarEstado("div-errou"), 2000);
 			}
 
 			input.value = "";
