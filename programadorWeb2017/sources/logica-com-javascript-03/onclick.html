@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<div class="container">
+		<div id="minha-div"></div>
+		<button id="butao" class="btn btn-success" onclick="adiciona();">
+			Adicionar conteúdo na Div
+		</button>
+	</div>
+
+	<script type="text/javascript">
+		function adiciona(){
+			document.getElementById("minha-div").style.background = "red";
+			document.getElementById("minha-div").style.padding = "30px";
+			document.getElementById("minha-div").style.margin = "30px";
+			document.getElementById("minha-div").style.color = "white";
+			document.getElementById("minha-div").innerHTML = "O botão funcionou legal!!";
+		}
+</script>
+
+</body>
+</html>
