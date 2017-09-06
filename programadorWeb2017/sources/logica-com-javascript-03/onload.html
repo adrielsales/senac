@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style media="screen">
+			#street-fighter {
+				display: block;
+				height: 250px;
+				border: 1px solid #eee;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container">
+
+
+		<input class="input-mudou" type="number" onchange="mudou(this.value)">
+
+		<p class="titulos">1</p>
+		<p class="titulos">2</p>
+		<p class="titulos">3</p>
+
+
+			<img id="street-fighter" src="ryu1.jpg" clas></div>
+			<button type="button" onclick="hadouken()">Hadouken</button>
+			<button type="button" onclick="defende()">Defende</button>
+
+	</div>
+
+		<script type="text/javascript">
+
+	function hadouken(){
+		document.getElementById('street-fighter').src = "ryu2.gif";
+	}
+
+	function defende(){
+		document.getElementById('street-fighter').src = "ryu1.jpg";
+	}
+
+
+
+
+
+			console.log(document.querySelector(".titulos").innerHTML);
+
+			var lista = document.querySelectorAll(".titulos");
+			console.log(lista.length);
+
+			function mudou(valor){
+				//var valorDoCampo = document.querySelector('#input-mudou');
+				console.log(valor);
+				// alert("mudou para " + valorDoCampo);
+			}
+
+		</script>
+
+
+
+	</body>
+</html>
