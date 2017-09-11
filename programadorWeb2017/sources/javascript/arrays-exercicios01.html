@@ -12,7 +12,11 @@
 		</div>
 		<script type="text/javascript">
 
-			var meuArray = ["Maria", 123, "Pedro", 15.55, false];
+			var meuArray = ["Maria", 123, "Pedro", 15.55, false, "Pedro"];
+			alert(meuArray.indexOf("Pedro")); // encontra o índice da primeira ocorrência
+			alert(meuArray.lastIndexOf("Pedro")); // encontra o índice da última ocorrência
+			alert(meuArray.reverse()); // inverte a posição dos elementos
+
 
 			meuArray.toString(); //retorna: Maria,123,Pedro,15.55,false
 			var juntaArray = meuArray.join(" - "); // resulta em: Maria - 123 - Pedro - 15.55 - false
