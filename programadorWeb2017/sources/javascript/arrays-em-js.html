@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Arrays com JavaScript</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h2>Arrays com JavaScript</h2>
+			<hr>
+		</div>
+		<script type="text/javascript">
+
+			var meuArray = ["Maria", 123, "Pedro", 15.55, false];
+
+			console.log(meuArray);
+
+			alert(meuArray.toString()); //retorna: Maria,123,Pedro,15.55,false
+			var juntaArray = meuArray.join(" - ");
+			alert(juntaArray); // resulta em: Maria - 123 - Pedro - 15.55 - false
+
+			meuArray.push("Turma de Progamação Web"); //adiciona um elemento
+			meuArray.pop(); // remove e retorna o último elemento
+			Array.isArray(meuArray); // retorna true se for tipo Array
+
+			var tamanhoDoArray = meuArray.length; // retorna 5
+			alert(tamanhoDoArray);
+			var ordenandoArray = meuArray.sort(); // retorna o array ordenado
+			alert(ordenandoArray); // imprime: 123,15.55,Maria,Pedro,true
+
+			var deZeroADez = [];
+			for (var i = 10; i > 0; i--) {
+				deZeroADez.push(i);
+			}
+
+
+
+		</script>
+	</body>
+</html>
