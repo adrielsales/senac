@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exemplo Onload</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style media="screen">
+	body {
+		padding-bottom: 200px;
+	}
+
+	#valor-do-input-onchange {
+		background: #eee;
+		padding: 10px;
+		text-align: center;
+		color: #666;
+		font-size: 35px;
+		display: none;
+	}
+	#street-fighter {
+		display: block;
+		height: 150px;
+	}
+	.exemplo-onclick {
+		height: 210px;
+		text-align: center;
+		width: 300px;
+		border:1px solid #999;
+		background: #eee;
+	}
+	.gatos, #gato{
+		width: 350px;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Exemplos Eventos</h1>
+		<hr>
+		<!-- Exemplo Onchange -->
+		<h2>Onchange</h2>
+		<p>Sempre que houver mudança no elemento html, o javascript dispara um comportamento.</p>
+		<input class="input-mudou" type="number" onchange="mudou(this.value)">
+		<div id="valor-do-input-onchange"></div>
+
+		<script type="text/javascript">
+		function mudou(valor){
+			//console.log(valor);
+			document.getElementById('valor-do-input-onchange').innerHTML = valor;
+			document.getElementById('valor-do-input-onchange').style.display = "inline-block";
+		}
+		</script>
+
+		<h2>Onclick</h2>
+		<p>Quando o usuário clica em um elemento marcado com esse evento, o javascript dispara uma função.</p>
+
+		<div class="exemplo-onclick">
+			<img id="street-fighter" src="ryu.png" class="center-block">
+			<div class="btn-group">
+				<button type="button" class="btn btn-danger" onclick="hadouken()">Hadouken</button>
+				<button type="button" class="btn btn-info" onclick="defende()">Defende</button>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function hadouken(){
+				document.getElementById('street-fighter').src = "ryu2.gif";
+			}
+			function defende(){
+				document.getElementById('street-fighter').src = "ryu.png";
+			}
+		</script>
+
+		<h2>Onmouseover</h2>
+		<p>Será executada quando o usuário passar o mouse sobre o elemento HTML.</p>
+
+		<div class="gatos">
+			<img id="gato" src="gato1.jpg" onmouseover="gatoRindo()" onmouseout="gatoSerio()">
+		</div>
+		<script type="text/javascript">
+			function gatoRindo(){
+				document.getElementById('gato').src = "gato2.jpg";
+			}
+			function gatoSerio(){
+				document.getElementById('gato').src = "gato1.jpg";
+			}
+		</script>
+
+	</div> <!-- /container -->
+</body>
+</html>
