@@ -21,8 +21,10 @@
 			meuArray.toString(); //retorna: Maria,123,Pedro,15.55,false
 			var juntaArray = meuArray.join(" - "); // resulta em: Maria - 123 - Pedro - 15.55 - false
 
-			meuArray.push("Turma de Progamação Web"); //adiciona um elemento
+			meuArray.push("Programação"); //adiciona um elemento no final
 			meuArray.pop(); // remove e retorna o último elemento
+			meuArray.shift(); // remove e retorna o primeiro elemento
+			meuArray.unshift(); // adiciona um elemento no início
 			Array.isArray(meuArray); // retorna true se for tipo Array
 
 			var tamanhoDoArray = meuArray.length; // retorna 5

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo Acerte Par ou Ímpar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style media="screen">
+		.lista-dos-numeros {
+			height: 150px;
+			background: #eee;
+			padding: 15px;
+		}
+		.div-com-o-numero {
+			height: 100px;
+			background: green;
+			margin: 5px;
+			text-align: center;
+			padding-top: 20px;
+		}
+		.numero{
+			display: none;
+			font-size: 35px;
+			color: #FFF;
+		}
+		.posicao-na-view {
+			font-size: 20px;
+			margin-top: 10px;
+			color: #FF0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<h2>Jogo Acerte Par ou Ímpar (1 - 10)</h2>
+
+		<div class="row lista-dos-numeros" id="div-lista-numeros"></div>
+		<hr>
+		<div id="resposta" class="alert"></div>
+
+
+		<script type="text/javascript">
+
+			function geraNumeroAleatorio(){
+				var numeroGerado = Math.round(Math.random() * 10 + 1);
+				return numeroGerado;
+			}
+
+			function par(num){
+				if (num % 2 == 0) {
+					document.getElementById(num).style.display = "block";
+					document.getElementById('resposta').className = "alert alert-success";
+					document.getElementById('resposta').innerHTML = "<h2>Você acertou!!!! " + num + " é par! </h2>";
+				} else {
+					document.getElementById('resposta').className += " alert-danger";
+					document.getElementById('resposta').innerHTML = "<h2>Você errou!!!! <img src='chorando.gif'></h2>";
+				}
+			}
+
+			function impar(num){
+				if (num % 2 != 0) {
+					document.getElementById(num).style.display = "block";
+					document.getElementById('resposta').className = "alert alert-success";
+					document.getElementById('resposta').innerHTML = "<h2>Você acertou!! " + num + " é ímpar!  </h2>";
+				} else {
+					document.getElementById('resposta').className += " alert-danger";
+					document.getElementById('resposta').innerHTML = "<h2>Você errou!!!! <img src='chorando.gif'></h2>";
+				}
+			}
+
+			function adicionaDivsComNumeros(ArrayDeNumeros){
+				for (var i = 0; i < ArrayDeNumeros.length; i++) {
+					var conteudoAtual = document.getElementById('div-lista-numeros').innerHTML;
+					document.getElementById('div-lista-numeros').innerHTML = conteudoAtual + "<div class='col-md-1 div-com-o-numero'><span class='numero' id="+ArrayDeNumeros[i]+">" + ArrayDeNumeros[i] +"</span><div class='btn-group'><button type='button' class='btn btn-warning btn-xs' onclick='par(" + ArrayDeNumeros[i] +");'>Par</button> "
+					+"<button type='button' class='btn btn-info btn-xs' onclick='impar(" + ArrayDeNumeros[i] +");'>Ímpar</button></div><div class='posicao-na-view'>" + i + "</div></div>";
+				}
+			}
+
+
+			var numerosAleatorios = [];
+			var num, posicao;
+			var contador = 0;
+
+			while (contador < 10) {
+				num = geraNumeroAleatorio();
+				posicao = numerosAleatorios.indexOf(num);
+				if(posicao === -1){
+					numerosAleatorios.push(num);
+					contador++;
+				}
+			}
+
+			// essa função deverá receber o array e manipular dentro dela deus indices
+			adicionaDivsComNumeros(numerosAleatorios);
+
+
+			// var arrayBidirecional = [["João", "Carlos"],["Fusca", "Caminhão"], ["Laranja", "Maçã"]];
+			//
+			// for (var i = 0; i < arrayBidirecional.length; i++) {
+			// 	console.log("Posição " + i + " do array:");
+			// 	for (var j = 0; j < arrayBidirecional[i].length; j++) {
+			// 		console.log(arrayBidirecional[i][j]);
+			// 	}
+			// }
+
+
+
+			console.log(numerosAleatorios);
+			console.log(numerosAleatorios.indexOf(7));
+
+		</script>
+
+	</div>
+</body>
+</html>
