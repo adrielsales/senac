@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Arrays Multidimensionais</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h2>Arrays Multidimensionais</h2>
+		</div>
+		<script type="text/javascript">
+
+		var imprime = function(conteudo){
+			document.write(conteudo);
+		}
+
+			var estadosNE = [
+				["AL", "Alagoas", "Maceió"],
+				["BA", "Bahia", "Salvador"],
+				["CE", "Ceará", "Fortaleza"],
+				["MA", "Maranhão", "São Luís"],
+				["PB", "Paraíba", "João Pessoa"],
+				["PE", "Pernambuco", "Recife"],
+				["PI", "Piauí", "Teresina"],
+				["RN", "Rio Grande do Norte", "Natal"],
+				["SE", "Sergipe", "Aracajú"]
+			]
+
+			for (var i = 0; i < estadosNE.length; i++) {
+				for (var j = 0; j < estadosNE[i].length; j++) {
+					if (estadosNE[i][j] == "PB") {
+						imprime("<h1 class='alert alert-danger'>" + estadosNE[i][j] + " na linha: " + i + ", célula: " + j + "</h1>");
+					}
+					imprime("<h4 class='alert alert-info'> <b>" + estadosNE[i][j] + "</b> na linha: " + i + ", célula: <b>" + j + "</b></h4>");
+				}
+				imprime("<br>");
+			}
+
+			// imprime(estadosNE[5][2]);
+
+		</script>
+	</body>
+</html>

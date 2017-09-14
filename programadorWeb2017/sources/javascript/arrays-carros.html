@@ -9,7 +9,35 @@
 		<div class="container-fluid">
 			<h2>Array de Carros</h2>
 			<script type="text/javascript">
+
+
 				var carros = ["Fusca", "Brasília", "Opala", "Kombi"];
+				var carrosRemovidos = carros.splice(1,2,"FIAT-147","Honda Civic", "HB20");
+				console.log(carrosRemovidos);
+				//imprime:"Brasília", "Opala"
+				console.log(carros);
+				//Array Original: ["Fusca", "FIAT-147", "Honda Civic", "HB20", "Kombi"]
+
+
+
+
+
+				var carrosAposUmIndice = carros.slice(2);
+				console.log(carrosAposUmIndice);
+				//imprime: ["Opala", "Kombi"]
+				var carrosAposUmIndice = carros.slice(1,3);
+				console.log(carrosAposUmIndice);
+				//imprime: ["Brasília", "Opala"]
+
+
+
+
+
+
+				var novoArray = carros.concat("Honda Civic", "HB20");
+				console.log(novoArray);
+				//imprime: ["Fusca", "Brasília", "Opala", "Kombi", "Honda Civic", "HB20"]
+
 				console.log(carros);
 				var indiceDoCarro = carros.indexOf("Opala");
 				carros[indiceDoCarro] = "FIAT-147";
