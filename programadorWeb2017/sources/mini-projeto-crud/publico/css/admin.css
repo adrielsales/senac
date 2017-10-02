@@ -1,0 +1,22 @@
+header {
+	background-color: #666;
+	text-align: center;
+	color: #FFF;
+	margin-bottom: 10px;
+}
+
+footer {
+	text-align: center;
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	font-size: 13px;
+	color: #999;
+}
+
+.img-tabela-imagem-listar {
+	max-width: 150px;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
