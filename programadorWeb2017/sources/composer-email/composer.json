@@ -1,0 +1,10 @@
+{
+    "name": "adrielsales/sistema-senac2017",
+    "description": "Programador Web 2017.",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+			"monolog/monolog":"1.0.*",
+			"phpmailer/phpmailer": "~6.0"
+		}
+}
