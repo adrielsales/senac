@@ -10,7 +10,7 @@
     <h3>Início do Sistema</h3>
     <hr>
     <ul>
-      <li><a href="cadastrar-tipo.php">Novo Tipo</a></li>
+      <li><a href="form-tipo.php">Novo Tipo</a></li>
       <li><a href="listar-tipos.php">Listar Tipos</a></li>
       <li><a href="cadastrar-categoria.php">Nova Categoria</a></li>
       <li><a href="listar-categorias.php">Listar Categorias</a></li>
