@@ -1,30 +1,20 @@
 <?php
-require_once 'conexao.php';
+require_once("../banco/conexao.php");
 
 $id = $_GET['id'];
-$sql = "SELECT * FROM categorias WHERE id = {$id}";
+$sql = "SELECT * FROM marcas WHERE id = {$id}";
 
 $resultado = mysqli_query($conexao, $sql);
 $categoria = mysqli_fetch_object($resultado);
 
+require_once("../includes/header-pages.php");
+
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Editar Categoria</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
   <div class="container">
-    <a href="index.php">
-      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-      Home
-    </a>
-    <h3>Editar Categoria</h3>
+    <h3>Editar Marcas</h3>
 
-		<form action="alterar-categoria.php" method="post">
+		<form action="alterar-marca.php" method="post">
 
       <input type="hidden" name="id" value="<?php echo $categoria->id ?>">
 
@@ -60,5 +50,5 @@ $categoria = mysqli_fetch_object($resultado);
       </div>
     </form>
   </div>
-</body>
-</html>
+
+<?php require_once("../includes/footer-pages.php"); ?>

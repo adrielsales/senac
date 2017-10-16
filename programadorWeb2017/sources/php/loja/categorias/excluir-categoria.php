@@ -1,5 +1,5 @@
 <?php
-require_once 'conexao.php';
+require_once("../banco/conexao.php");
 $id = $_GET['id'];
 $sql = "DELETE FROM categorias WHERE id = $id";
 $resultado = mysqli_query($conexao, $sql);
