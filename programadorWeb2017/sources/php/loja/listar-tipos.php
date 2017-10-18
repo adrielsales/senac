@@ -51,9 +51,8 @@ $resultado = mysqli_query($conexao, $sql);
         echo "<td>{$linha->descricao}</td>";
         echo "<td>{$linha->estado}</td>";
         echo "<td>
-        <a href='editar-tipo.php?tipo_id={$linha->id}' class='btn btn-info btn-xs'>Editar</a>
-        |
-        <a href='excluir-tipo.php?tipo_id={$linha->id}' class='btn btn-danger btn-xs'>Excluir</a>
+        <a href='editar-tipo.php?tipo_id={$linha->id}'>Editar</a>|
+        <a href='excluir-tipo.php?tipo_id={$linha->id}'>Excluir</a>
         </td>";
         echo "</tr>";
       }

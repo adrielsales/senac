@@ -12,7 +12,10 @@
       Home
     </a>
     <h3>Cadastro de Tipos</h3>
+
     <form action="create-tipo.php" method="get">
+
+    
       <div class="form-group">
         <label>Nome:</label>
         <input type="text" name="nome" class="form-control">
