@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Exemplo 01</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
+<?php require_once("../includes/header-pages.php"); ?>
+
   <div class="container">
-    <a href="index.php">
-      <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-      Home
-    </a>
-    <h3>Cadastro de Tipos</h3>
-
-    <form action="create-tipo.php" method="get">
-
-    
+    <h3>Cadastrar Nova Marca</h3>
+    <form action="create-marca.php" method="post">
       <div class="form-group">
         <label>Nome:</label>
         <input type="text" name="nome" class="form-control">
@@ -36,5 +23,5 @@
       </div>
     </form>
   </div>
-</body>
-</html>
+
+<?php require_once("../includes/footer-pages.php"); ?>
