@@ -9,6 +9,13 @@
 	padding: 0 60px;
 }
 
+/*para os forms*/
+form {
+	background-color: #f4f4f4;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
 /*Páginas das listagens*/
 
 .botao-new {
@@ -33,8 +40,7 @@ footer {
 	font-size: 11px;
 	border-top: 1px solid #999;
 	padding-top: 20px;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
+	position: fixed;
+	bottom: 0;
 	background-color: #f4f4f4;
-}

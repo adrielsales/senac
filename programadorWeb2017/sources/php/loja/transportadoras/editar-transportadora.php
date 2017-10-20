@@ -7,7 +7,8 @@ $sql = "SELECT * FROM transportadoras WHERE id = {$id}";
 $resultado = mysqli_query($conexao, $sql);
 $categoria = mysqli_fetch_object($resultado);
 
-require_once("../includes/header-pages.php");
+require_once("../includes/header.php");
+require_once("../includes/menu.php");
 
 ?>
 
@@ -31,4 +32,4 @@ require_once("../includes/header-pages.php");
     </form>
   </div>
 
-<?php require_once("../includes/footer-pages.php"); ?>
+<?php require_once("../includes/footer.php"); ?>

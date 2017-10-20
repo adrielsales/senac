@@ -5,7 +5,8 @@
 	$sql = "SELECT * FROM categorias ORDER BY nome";
 	$resultado = mysqli_query($conexao, $sql);
 
-	require_once("../includes/header-pages.php");
+	require_once("../includes/header.php");
+	require_once("../includes/menu.php");
 ?>
 
 
@@ -25,7 +26,7 @@
 
 			<a href="form-categoria.php" class="btn btn-success botao-new">+ Adicionar uma nova Categoria</a>
 		</div> <!-- end row -->
-	</div> <!-- end header -->
+	</div> <!-- end container -->
 
 	<section class="container">
 		<div class="row">
@@ -97,4 +98,4 @@
 			</div>  <!-- end row -->
 		</section> <!-- end section -->
 
-<?php require_once("../includes/footer-pages.php"); ?>
+<?php require_once("../includes/footer.php"); ?>

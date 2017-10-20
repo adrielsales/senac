@@ -5,7 +5,8 @@
 	$sql = "SELECT * FROM transportadoras ORDER BY nome";
 	$resultado = mysqli_query($conexao, $sql);
 
-	require_once("../includes/header-pages.php");
+	require_once("../includes/header.php");
+	require_once("../includes/menu.php");
 ?>
 
 
@@ -87,4 +88,4 @@
 			</div>  <!-- end row -->
 		</section> <!-- end section -->
 
-<?php require_once("../includes/footer-pages.php"); ?>
+<?php require_once("../includes/footer.php"); ?>

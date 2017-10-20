@@ -1,4 +1,7 @@
-<?php require_once("../includes/header-pages.php"); ?>
+<?php
+require_once("../includes/header.php");
+require_once("../includes/menu.php");
+ ?>
 
   <div class="container">
     <h3>Cadastrar Nova Marca</h3>
@@ -24,4 +27,4 @@
     </form>
   </div>
 
-<?php require_once("../includes/footer-pages.php"); ?>
+<?php require_once("../includes/footer.php"); ?>
