@@ -41,11 +41,11 @@ echo "BASE64<br>";
 $string = 'Curso Programador Web 2017';
 $codificada = base64_encode($string);
 echo "Codificado: $codificada";
-//Resultado: b34c81ca15b12cf7426d3b7c51beb07af367fa2e
+//Resultado: Codificado: Q3Vyc28gUHJvZ3JhbWFkb3IgV2ViIDIwMTc=
 echo "<br>";
 $original = base64_decode($codificada);
 echo "Decodificado: $original" ;
-//Resultado: b34c81ca15b12cf7426d3b7c51beb07af367fa2e
+//Resultado: Decodificado: Curso Programador Web 2017
 
 
  ?>
