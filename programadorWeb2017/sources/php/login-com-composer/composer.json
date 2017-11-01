@@ -1,0 +1,12 @@
+{
+    "name": "adrielacademico/sistema-de-login-php",
+    "description": "Um sistma de login em PHP e MySql, com validações e criptografia.",
+    "type": "academic",
+    "authors": [
+        {
+            "name": "Adriel Sales",
+            "email": "adrielsales@hotmail.com"
+        }
+    ],
+    "require": {}
+}
