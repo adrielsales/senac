@@ -15,18 +15,35 @@
 			Sistema de Login
 		</div>
 
+		<?php if(isset($_GET['erro_autenticacao'])): ?>
+
+		<div class="card red-grey darken-1">
+	        <div class="card-content red-text">
+	          <span class="card-title"><strong>Erro ao tentar login</strong></span>
+	          <p>Email ou Senha não conferem. Por favor, tente novamente.</p>
+	        </div>
+	    </div>
+
+
+		<?php endif; ?>
+
 		<div class="row">
-		    <form class="col s12">
+		    <form class="col s12" action="valida.php" method="post">
 		      <div class="row">
-		        <div class="input-field col s6">
-		          <i class="material-icons prefix">account_circle</i>
-		          <input id="icon_prefix" type="text" class="validate">
+		        <div class="input-field col s12">
+		          <i class="material-icons prefix">email</i>
+		          <input id="icon_prefix" name="email" type="text" class="validate">
 		          <label for="icon_prefix">Email</label>
 		        </div>
-		        <div class="input-field col s6">
-		          <i class="material-icons prefix">phone</i>
-		          <input id="icon_telephone" type="tel" class="validate">
+		        <div class="input-field col s12">
+		          <i class="material-icons prefix">lock</i>
+		          <input id="icon_telephone" name="senha" type="password" class="validate">
 		          <label for="icon_telephone">Senha</label>
+		        </div>
+		        <div class="input-field col s12">
+		          <button class="waves-effect waves-light btn" type="submit" name="login" value="login">
+		          	<i class="material-icons left">send</i>Enviar
+		          </button>
 		        </div>
 		      </div>
 		    </form>
